@@ -40,6 +40,7 @@ bot.on("start", function(){
           break
           case"13:15":
           post("４限目開始 ")
+          break;
           case"14:00":
           post("４限目休み時間")
           break;
@@ -54,6 +55,7 @@ bot.on("start", function(){
           break;
           case"16:00":
           post("終業、今日も一日お疲れ様でした")
+          break;
         }
 
       }
