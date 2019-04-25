@@ -1,5 +1,6 @@
 require('dotenv').config()
 var SlackBot = require('slackbots');
+const cron = require('node-cron');
 
 let schedule = {
   "09:30" : "始業、今日も一日頑張ってください ",
