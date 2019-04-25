@@ -33,9 +33,6 @@ bot.on("start", function(){
         next_m = m
         post(schedule[val])
       }
-      else{
-        console.log(time)
-      }
     })
   }, 1000)
 })
@@ -45,3 +42,4 @@ function post(message){
   };
   bot.postMessageToChannel("timestamp", message, params)
 }
+bot.on('error', console.error);//エラーハンドリング
