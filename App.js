@@ -25,7 +25,7 @@ var bot = new SlackBot({
 bot.on("start", function(){
   console.log("start")
 })
-cron.schedule('* * * * *', () => {
+cron.schedule('* * * * 1,2,3,4,5', () => {
   `${fixTime(new Date().getHours())}:${fixTime(new Date().getMinutes())}` in schedule ? Announce(`${fixTime(new Date().getHours())}:${fixTime(new Date().getMinutes())}`) : null;
 
   function Announce(time) {
